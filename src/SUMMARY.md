@@ -9,10 +9,12 @@
     - [Introduction](networks/chapter_1.md)
     - [Physical Layer](networks/chapter_2.md)
     - [Data Link](networks/chapter_3.md)
+    - [Medium Access Control Layer](networks/chapter_4.md)
 
 - [Software](software/chapter_0.md)
     - [Object Oriented Software Engineering](software/chapter_1.md)
     - [Architectural Design](software/chapter_2.md)
+    - [Requirements Gathering](software/chapter_4.md)
 
 - [Computer Graphics & Animation](animation/chapter_0.md)
     - [Linear Algebra and OpenGL Setup](animation/chapter_1.md)
