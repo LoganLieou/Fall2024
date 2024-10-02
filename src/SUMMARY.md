@@ -1,9 +1,10 @@
 # Summary
 
 - [Compilers](compilers/chapter_0.md)
-    - [Automata Review](compilers/chapter_1.md)
     - [Syntax Directed Parsing](compilers/chapter_2.md)
     - [Flex](compilers/flex.md)
+    - [eNFA to NFA](compilers/chapter_1.md)
+    - [NFA to DFA](compilers/nfa_to_dfa.md)
 
 - [Networks](networks/chapter_0.md)
     - [Introduction](networks/chapter_1.md)
@@ -20,3 +21,9 @@
     - [Linear Algebra and OpenGL Setup](animation/chapter_1.md)
     - [Bezier Curves](animation/chapter_2.md)
     - [Quaternions](animation/chapter_3.md)
+
+- [Competitive Algorithms](algorithms/chapter_0.md)
+    - [Combinatorics](algorithms/chapter_1.md)
+    - [Graphs](algorithms/chapter_2.md)
+    - [Dynamic Programming](algorithms/chapter_3.md)
+    - [String Fundamentals](algorithms/chapter_4.md)

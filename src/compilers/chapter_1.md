@@ -1,7 +1,3 @@
-# Automata Review
+# Converting $\epsilon{}$NFA to NFA
 
-## DFAs
 
-![](static/dfa_1.png)
-
-## Converting $\epsilon{}$NFA to NFA
