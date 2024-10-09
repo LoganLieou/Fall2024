@@ -11,6 +11,7 @@
     - [Physical Layer](networks/chapter_2.md)
     - [Data Link](networks/chapter_3.md)
     - [Medium Access Control Layer](networks/chapter_4.md)
+    - [Network Layer](networks/chapter_5.md)
 
 - [Software](software/chapter_0.md)
     - [Object Oriented Software Engineering](software/chapter_1.md)
