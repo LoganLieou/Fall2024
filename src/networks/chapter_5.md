@@ -56,3 +56,83 @@ outgoing connection in the routing table as to where to send the packet and
 
 this feels like there's a lot of explanation going on but not a lot of rigorous
 things that can be tested on
+
+### Routing Overview (Slides)
+
+- Link State Routing
+- Hierarchical Routing
+- Broadcast Routing
+    - Spanning Tree
+    - Reverse Path Forwarding
+
+### 5.2.1 The Optimality Principle
+
+The optimality principle states that if the shortest path between `I` and `K`
+has some router `J` then the shortest path between `J` and `K` falls along the
+same path
+
+The set of optimal routes from all sources to a given destination constructs a
+**sink tree** which is rooted at `dest` where the metric is the number of hops
+
+![](static/sink_tree.png)
+
+If all possible paths are chosen it constructs a **DAG**
+
+### 5.2.2 Shortest Path Algorithm
+
+TODO
+
+## 5.3 Congestion Control Algorithms
+
+When too many packets are present in the system such that the performance begins
+to degrade we call this **congestion**.
+
+This graph shows how congestion happens there's a carrying capacity of a network
+and once more packets are being sent than carrying capacity the packets/seconds
+begins to degrade and the offered packets passes up the carrying capacity of the
+network:
+
+![](static/carrying_capacity.png)
+
+It's possible sometimes that you run into a **congestion collapse** where the
+performance of the network collapses under excessive load.
+
+### 5.3.1 Approaches to Congestion Control
+
+Two solutions arise for congestion, either increase the resources or decrease
+the load different solutions are usually applied on different time scales to
+either prevent the congestion or react to congestion as it occurs.
+
+![](static/timescale_congestion.png)
+
+**provisioning** is when we create more resources this usually takes a while and
+is reactive over large timescales to consistently high traffic. 
+**Traffic-aware routing** is like when we have a helicopter which reports 
+accidents and such and people route they cars around the traffic we can think of
+this with packets where we route around congested nodes. Another solution is in
+VC networks you get **admission control** where we just start rejecting new
+circuits begin created. When all else fails there's **Load Shedding** which just
+drops packets.
+
+### 5.3.2 Traffic Aware Routing
+
+We take load into account when computing routes this shifts traffic away from
+hotpots that will be the first places to experience congestion. How we do this
+in practice is we set link weight to be a function of: bandwidth, propagation
+delay, measured load or average queuing delay. In real life though we don't
+typically do this due to potential issues, with routing tables, the book gives
+an example of a network topology which will cause issues for this approach, but
+typically in real life traffic engineers will deal with this sort of issue where
+we more so depend on adjustments made outside the protocol
+
+### 5.3.3 Admission Control
+
+The idea behind admission control in a virtual circuit (VC) network is we do not
+setup new virtual circuits if doing so causes the network to become congested.
+commonly used descriptors are **Leaky Bucket** and **Token Bucket**  we use
+these descriptors to decide on weather or not to allow new circuits to be
+formed.
+
+### 5.3.4 Traffic Throttling
+
+

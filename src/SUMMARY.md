@@ -22,6 +22,7 @@
     - [Linear Algebra and OpenGL Setup](animation/chapter_1.md)
     - [Bezier Curves](animation/chapter_2.md)
     - [Quaternions](animation/chapter_3.md)
+    - [Forward Kinematics](animation/chapter_4.md)
 
 - [Competitive Algorithms](algorithms/chapter_0.md)
     - [Combinatorics](algorithms/chapter_1.md)
